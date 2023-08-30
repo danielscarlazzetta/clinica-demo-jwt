@@ -46,3 +46,13 @@ $ npm run test:cov
 ```
 
 
+## Instalaciones necesarias
+
+```bash
+# uuid
+$ npm i --save-dev @types/uuid
+# Validacion para los Pipes
+$ npm install class-validator
+# Transformacion de clases
+$ npm install class-transformer
+```
