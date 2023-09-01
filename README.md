@@ -6,13 +6,36 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 
-## Description
+## Descripcion
 
 Este proyecto tiene como base:
   -creacion de 4 tipos de usuarios(usuario, usuMain, usuEmp, usuCli)
   -clase principal usuario, los otros 3 heredan de usuario
   -clase de pedir hora(usuMain,usuEmp,UsuCli)
 
+## Stack a utilizar
+  -MongoDB
+  -NestJs
+
+
+# ejecutar en desarrollo
+  1. Clonar repo
+  2. Ejecutar
+    ```
+    npm install
+    ```
+  3. Tener NestCli instalado
+    ```
+    npm i -g @nest/cli
+    ```
+  4. Levantar base de datos
+    ```
+    docker-compose up -d
+    ```
+  5. Instalar librerias y/o dependencias mongoose
+    ```
+    npm install add @nestjs/mongoose mongoose
+    ```
 ## Instalacion
 
 ```bash
@@ -25,7 +48,7 @@ $ npm install
 # development
 $ npm run start
 
-# watch mode
+# watch mode Recomendado!
 $ npm run start:dev
 
 # production mode

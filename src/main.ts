@@ -4,6 +4,7 @@ import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  /*app.setGlobalPrefix('login'); aca se marcara la ruta del endpoint*/
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
